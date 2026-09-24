@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem@0.6.2", "/home/user/projects"]
+    },
+    "everything": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everything@0.3.0"]
+    },
+    "bun-tool": {
+      "command": "bun",
+      "args": ["x", "@modelcontextprotocol/server-github"]
+    }
+  }
+}

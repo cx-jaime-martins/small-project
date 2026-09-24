@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    The STDIO transport uses stdout exclusively for the JSON-RPC channel, so application
+    logs must never be written to the console — a single stray log line would corrupt the
+    protocol stream and break the client. This config drops Spring Boot's default console
+    appender entirely and logs to a file instead.
+-->
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>stdio-calculator-server.log</file>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>

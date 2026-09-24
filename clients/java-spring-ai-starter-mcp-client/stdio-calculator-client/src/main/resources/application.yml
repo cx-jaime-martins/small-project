@@ -1,0 +1,18 @@
+spring:
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      client:
+        name: calculator-client
+        type: SYNC
+        request-timeout: 10s
+        stdio:
+          connections:
+            calculator:
+              command: java
+              # Relative paths are resolved against this application's working directory,
+              # so run this client from within its own module directory (see README).
+              args:
+                - -jar
+                - ../../../servers/java-spring-ai-starter-mcp-server/stdio-calculator-server/target/stdio-calculator-server.jar

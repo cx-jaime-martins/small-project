@@ -1,0 +1,19 @@
+{
+    "name": "@mcp-examples/sse-legacy",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "client": "tsx client.ts"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.30.0"
+    },
+    "devDependencies": {
+        "tsx": "catalog:devTools"
+    },
+    "example": {
+        "transports": [
+            "sse"
+        ]
+    }
+}

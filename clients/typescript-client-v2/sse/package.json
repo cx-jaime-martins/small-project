@@ -1,0 +1,20 @@
+{
+    "name": "@mcp-examples/client-v2-sse",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "client": "tsx client.ts"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/client": "^2.0.0"
+    },
+    "devDependencies": {
+        "tsx": "catalog:devTools"
+    },
+    "example": {
+        "transports": [
+            "sse"
+        ],
+        "//": "Uses @modelcontextprotocol/client (v2), not @modelcontextprotocol/sdk (v1)."
+    }
+}

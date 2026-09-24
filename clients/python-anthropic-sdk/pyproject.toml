@@ -1,0 +1,12 @@
+[project]
+name = "anthropic-mcp-connector-examples"
+version = "0.1.0"
+description = "Examples of the Anthropic Messages API's MCP connector (mcp_servers)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["anthropic"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

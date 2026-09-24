@@ -1,0 +1,19 @@
+{
+  "mcp": {
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem@0.6.2", "/home/user/projects"],
+      "enabled": true
+    },
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "enabled": true
+    },
+    "remote-tool": {
+      "type": "remote",
+      "url": "https://mcp.example.com/sse",
+      "enabled": true
+    }
+  }
+}

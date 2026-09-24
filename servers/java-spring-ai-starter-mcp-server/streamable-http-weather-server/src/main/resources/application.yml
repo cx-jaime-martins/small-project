@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  ai:
+    mcp:
+      server:
+        name: weather-server
+        version: 0.1.0
+        type: SYNC
+        # Streamable-HTTP replaces the older SSE transport (deprecated since Spring AI 2.0.0).
+        protocol: STREAMABLE
+        annotation-scanner:
+          enabled: true

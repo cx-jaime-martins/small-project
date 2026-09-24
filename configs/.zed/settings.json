@@ -1,0 +1,16 @@
+{
+  "context_servers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem@0.6.2", "/home/user/projects"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"]
+    },
+    "docker-mcp": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "mcp/docker:1.2.0"]
+    }
+  }
+}

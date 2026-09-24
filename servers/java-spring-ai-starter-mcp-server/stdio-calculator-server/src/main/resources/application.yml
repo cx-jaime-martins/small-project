@@ -1,0 +1,14 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+  ai:
+    mcp:
+      server:
+        name: calculator-server
+        version: 0.1.0
+        type: SYNC
+        # Activates the STDIO transport (bidirectional JSON-RPC over stdin/stdout).
+        stdio: true
+        annotation-scanner:
+          enabled: true

@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: off
+  ai:
+    mcp:
+      client:
+        name: weather-client
+        type: SYNC
+        request-timeout: 10s
+        streamable-http:
+          connections:
+            weather:
+              url: http://localhost:8080
+              endpoint: /mcp
