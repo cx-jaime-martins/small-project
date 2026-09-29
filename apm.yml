@@ -1,0 +1,23 @@
+name: risky-model
+version: 1.0.0
+description: APM project for risky-model
+author: AntonioL
+# Which agent platforms to deploy to (uncomment to pin):
+# targets:
+#   - copilot
+#   - claude
+
+dependencies:
+  apm:
+    - git: nextlevelbuilder/ui-ux-pro-max-skill
+      skills:
+        - ui-ux-pro-max
+    - git: obra/superpowers
+      skills:
+        - brainstorming
+    - git: anthropics/skills
+      skills:
+        - docx
+  mcp: []
+includes: auto
+scripts: {}
